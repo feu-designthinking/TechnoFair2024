@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techno Fair 2024: Poster Entries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobile.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 class="lg" style = "color:rgb(243, 109, 36)">Coming Soon</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      lastTouch(); // removes rotate panel
+    }
+    filter.parentElement.style.display = "none";
+  </script>
+</html>

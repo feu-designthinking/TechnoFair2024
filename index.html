@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Techno Fair 2024</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-city.css">
+        <link rel="stylesheet" href="style-overlay-adjustments.css">
+    </head>
+    <body>
+        <div id="city-map"></div>
+        <div id="video-banner">
+            <img src="./img/video-banner.gif" alt="">
+            <div id="close-video-banner"><button class="bi bi-x-lg"></button></div>
+        </div>
+    </body>
+    <script src="script.js"></script>   
+    <script src="script-city.js"></script>
+    <script>
+        addAsset(assets.lbBldg, "", "", "");
+        addAsset(assets.cafe, "Posters", pins.poster, "bldg-poster.html");
+        addAsset(assets.tallest, "Video Pitch", pins.pitch, "bldg-pitch-deck.html");
+        addAsset(assets.corner, "Infomercial", pins.infomercial, "bldg-infomercial.html");
+        addAsset(assets.triplets, "", "", "");
+        addAsset(assets.bank, "", "", "");
+        addAsset(assets.feuDiliman, "FEU Diliman", pins.diliman, "https://www.facebook.com/feudilimantechnofair");
+        addAsset(assets.hospital, "", "", "");
+        addAsset(assets.feuAlabang, "", "", "");
+        addAsset(assets.pharmacy, "", "", "");
+        addAsset(assets.feuTech, "FEU Tech", pins.techno, "bldg-coming-soon.html");
+        addAsset(assets.white, "", "", "");
+        addAsset(assets.bakery, "History", pins.history, "bldg-coming-soon.html");
+        addAsset(assets.blueBldg, "", "", "");
+        addAsset(assets.apartment, "", "", "");
+        addAsset(assets.balloon, "", "", "");
+        addAsset(assets.airbus, "", "", "");
+        addAsset(assets.windmill, "", "", "");
+        addAsset(assets.yacht, "Facebook", pins.facebook, "https://www.facebook.com/profile.php?id=100069979578950&mibextid=LQQJ4d");
+        addAsset(assets.whale, "", "", "");
+
+        const closeBanner = document.querySelector('#close-video-banner');
+        closeBanner.onclick = function() {
+            document.querySelector('#video-banner').style.display = "none";
+            document.querySelector('#city-map').style.display = "block";
+        }
+        body.onload = function() {
+            const videoBanner = document.querySelector('#video-banner > img');
+            if (videoBanner.offsetWidth > window.innerWidth) {
+                videoBanner.style.width = window.innerWidth.toString() + "px";
+                videoBanner.style.height = (window.innerWidth / 16.0 * 9).toString() + "px";
+            }
+        }
+
+        console.log("Credits");
+        console.log("Poster Icon: https://icons8.com/icon/UZMGqdAjZLHd/poster");
+        console.log("Television Icon: https://icons8.com/icon/828Gz67z5TIm/television");
+        console.log("Baseball Icon: https://icons8.com/icon/105045/baseball-ball");
+        console.log("Facebook Icon: https://icons8.com/icon/dWCK2cNYlrUQ/facebook");
+
+        var assetsQuery = document.querySelectorAll('.pin');
+        for (var i = 0; i < assetsQuery.length; i++) {
+            assetsQuery[i].style.animationDelay = (Math.random() * 1.5).toString() + "s";
+        }
+    </script>
+</html>

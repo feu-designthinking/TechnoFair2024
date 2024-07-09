@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techno Fair 2024: Poster Entries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobile.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 class="lg" style = "color:rgb(243, 109, 36)">Posters</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script src = "script-finalists.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      lastTouch(); // removes rotate panel
+    }
+
+    newPoster('Digitox Retreats', 'DigitoxDivas', 'https://drive.google.com/file/d/1-_ZQlCX_Dtaltky5u5bou6ptewF5BM-2/view?usp=drive_link', 'DA391/DA392', 'Diliman');
+    newPoster('MobileWash', 'MonDeoVeral', 'https://drive.google.com/file/d/1Cq3zeKLpKB1RFlx1yQGiX-j3kOa6qNk7/view?usp=drive_link', 'DA391/DA392', 'Diliman');
+
+    newPoster('Cyper', 'Sentinel', 'https://drive.google.com/file/d/1Z3BCMwAfobsKUMWgCaU1oscnyuLPNB-Z/view?usp=drivesdk', 'DW21', 'Diliman');
+    newPoster('HireQuest', 'EmployEase', 'https://drive.google.com/file/d/1FldTu0IAVWEq1Rv4nvEvqlyxEbs-kgVr/view?usp=drive_link', 'DW21', 'Diliman');
+    newPoster('Buzzina', 'TechnoForge', 'https://drive.google.com/file/d/1ch4KYR4V1PuBKEB4kxoDZ3gPRgn-p4Fm/view?usp=sharing', 'DW21', 'Diliman');
+    newPoster('Noursh', 'Feederpreneurs', 'https://drive.google.com/file/d/1GBk198vzS7JfwWDh3OauUqTFKjm43EnS/view?usp=sharing', 'DW21', 'Diliman');
+    newPoster('Workin\' Progress', 'Workify', 'https://drive.google.com/file/d/1daxN1rRA49ZdDLDx9ryiIUWRETykRArH/view?usp=sharing', 'DW21', 'Diliman');
+    newPoster('EcoChamp', 'Technopaths', 'https://drive.google.com/file/d/1RR4e3w-UlyQXlNO-c4GDCLatKjmug61u/view?usp=sharing', 'DW21', 'Diliman');
+    newPoster('EcoPoints', 'ReFresh', 'https://drive.google.com/file/d/1bqpHlv00BoLGPhjU_YAc9u1Pxf2C3C0f/view?usp=sharing', 'DW21', 'Diliman');
+
+    newPoster('Brews and Pen Cafe', 'Brews & Pen', 'https://drive.google.com/file/d/1SrEoKiI6k5LZ3cv9-waAgvQxYW1XFtKb/view?usp=sharing', 'DX21', 'Diliman');
+    newPoster('Pabili\'s', 'Pabili\'s', 'https://drive.google.com/file/d/11JIU4E6zMEYLkYcU54hZ6hj60XIlqRDH/view?usp=sharing', 'DX21', 'Diliman');
+    newPoster('MediArm', 'Requies', 'https://drive.google.com/file/d/1KkpJgBQGcIZEqJqTh2u92XwBTdWcePgA/view?usp=drive_link', 'DX21', 'Diliman');
+    newPoster('STCS - 3D PC BUILD', 'Sample Text', 'https://drive.google.com/file/d/16pQNwnjBVMLiw4CbWmbglZExW4FiH4QW/view?usp=sharing', 'DX21', 'Diliman');
+    newPoster('HADES', 'HADES', 'https://drive.google.com/file/d/1cPf3Q_AlaGNn4MGKdox4ihFRoZcRqE3P/view?usp=drive_link', 'DX21', 'Diliman');
+
+    newPoster('???', 'INNOTECH', '', 'TB21', 'Tech');
+
+    newPoster('???', 'SENTINELS', '', 'TB22', 'Tech');
+
+    newPoster('Spark', 'Visual Tech', 'https://drive.google.com/file/d/1evRI3dPeeJjXkGAEG64uD6epr_BqrN2P/view?usp=sharing', 'TD21', 'Tech');
+    newPoster('EcoPaws', 'Rainbow Rockets', 'https://drive.google.com/file/d/1-2IWZ6HIAieKZ_Y5V09UcSvFSl_vZfRp/view?usp=drivesdk', 'TD21', 'Tech');
+    newPoster('Sure Care', 'Tech Trailblazers', 'https://drive.google.com/file/d/1HecxUMYEkq99jVp2-7g06vhsib15t0o_/view?usp=sharing', 'TD21', 'Tech');
+    newPoster('ipa Wrap', 'Ala Singko', 'https://drive.google.com/file/d/1EDUH0tIsP8pwzfZ3Ir-D1XjcyzTOAqId/view?usp=sharing', 'TD21', 'Tech');
+    newPoster('City Fixers', 'Ramen Co.', 'https://drive.google.com/file/d/1PEormbWiJ-lc7i1VGjX81dLddzkZOD2R/view?usp=drive_link', 'TD21', 'Tech');
+    newPoster('AquaLink', 'Start Up', 'https://drive.google.com/file/d/1K3ZjUvhbBwbECfOknI5dMloYj00XwRfG/view?usp=sharing', 'TD21', 'Tech');
+
+    newPoster('MindHealth+', 'PEGASUS NI ADONIS', 'https://drive.google.com/file/d/1JThPZolA5cEfKEB0mBG6vwDZoKVyhUdu/view?usp=drive_link', 'TD22', 'Tech');
+    newPoster('RIPE N READY', 'RIPE N READY', 'https://drive.google.com/file/d/1qZGjBNAp1Z2xHM9g7d6j4cTBoXCgLxPf/view?usp=drive_link', 'TD22', 'Tech');
+    newPoster('CONDUIT', 'THE POWERHOUSE', 'https://drive.google.com/file/d/1gKCSwtvYI_zoc-H8N6uyvYI1jnho748J/view?usp=drive_link', 'TD22', 'Tech');
+    newPoster('Body Buddy', 'BENEDIXIMUS', 'https://drive.google.com/file/d/1ZHpRi74_L5-QfyXpZKRCTkWBgWYqIeyY/view?usp=drive_link', 'TD22', 'Tech');
+    newPoster('Moothane', 'CAN I HAVE A 7PCS MCBEEFNUGGETS AND MCSCRUMBLE COMBO', 'https://drive.google.com/file/d/1w6qgylQSZyKYk9UElato-TIKasbtMVev/view?usp=drive_link', 'TD22', 'Tech');
+
+    newPoster('Zensync', 'DYNAMIC DINOSAURS ', 'https://drive.google.com/file/d/1aMuZcdAfM4igYBowOxlg8-Zy2iy_t89c/view?usp=drive_link', 'TD23', 'Tech');
+    newPoster('HUSH HAVEN', 'PINK PANTHERS', 'https://drive.google.com/file/d/1OvBuPJLvgufhKbbTxiv8NY_cJljwGRws/view?usp=drive_link', 'TD23', 'Tech');
+    newPoster('PigStake', 'PORKY PIGS', 'https://drive.google.com/file/d/1aIJA-G9Hw3s_CFAa2FOHe78Nog0UpB6E/view?usp=drive_link', 'TD23', 'Tech');
+    newPoster('RELIVE', 'JOLLY JAGUARS', 'https://drive.google.com/file/d/1B3kQEILDLMPbu0kVtx1TQBLsWzSevg_F/view?usp=drive_link', 'TD23', 'Tech');
+    newPoster('WizRac', 'RANDOM RACCOONS', 'https://drive.google.com/file/d/1DOQHFv5XdnXilVB3y1anYxo0ef7OxZ4n/view?usp=drive_link', 'TD23', 'Tech');
+    newPoster('KISLAPP', 'TASTY TAMARAWS ', 'https://drive.google.com/file/d/1qFR3Ewgpf6ZfLhnU-a5KMN9qe1ckPfFH/view?usp=drive_link', 'TD23', 'Tech');
+    newPoster('AGROSCAN', 'WILD WOLVES', 'https://drive.google.com/file/d/16hO2zk2ywPOvF5MaRnL7yHViBYZmOdW5/view?usp=drive_link', 'TD23', 'Tech');
+    newPoster('AEGIS', 'SEISMIC SQUIDS ', 'https://drive.google.com/file/d/1mdax7Nv-0pl0LH_mSfF4n2BqeJmEtGXu/view?usp=drive_link', 'TD23', 'Tech');
+
+    newPoster('Lambat', 'Cute Capybaras', 'https://drive.google.com/file/d/1YBANXBOsZ_e5zh37CYBpU6Wg1q2RCb-7/view?usp=sharing', 'TD24', 'Tech');
+    newPoster('Biyahe', 'Kind Kangaroos', 'https://drive.google.com/file/d/1TX2CdXE7KhiHs5YCQB8RSQlmwOcZ_8-A/view?usp=sharing', 'TD24', 'Tech');
+    newPoster('Green Elevate', 'Regal Robins', 'https://drive.google.com/file/d/1qBJv85ndz8W2bYsdIDViQWcbaCi5v8mg/view?usp=sharing', 'TD24', 'Tech');
+    newPoster('Edutech', 'Salty Snakes', 'https://drive.google.com/file/d/1NpF5p-JfS1od5itszjH4-NhpWeB5WgwL/view?usp=sharing', 'TD24', 'Tech');
+    newPoster('Earth Wear Designs', 'Talented Tamaraws', 'https://drive.google.com/file/d/1n0x2P3W8QuPX-UtX4vzAiIMIVtWy0ZZe/view?usp=sharing', 'TD24', 'Tech');
+    newPoster('Salvare', 'Valorous Vaquitas', 'https://drive.google.com/file/d/1nRCyh-Nt0udQNsqRYZM7YTW3ygq0pB3b/view?usp=sharing', 'TD24', 'Tech');
+
+    newPoster('???', 'B-LINK', '', 'TN21', 'Tech');
+
+    newPoster('???', 'Cognitio Tech', '', 'TN26', 'Tech');
+
+    newPoster('WHERK', 'Smiski', 'https://drive.google.com/file/d/1YozpFNryyntSLW1-LnzwIBPVzw8LfwWk/view?usp=drive_link', 'TW21', 'Tech');
+    newPoster('Focusify', 'Hearthtrobs 2.0', 'https://drive.google.com/file/d/1GQDkwVOnZaaANdbX56pxXz9tfIoSw7EC/view?usp=drive_link', 'TW21', 'Tech');
+    newPoster('POLLYANNA', 'COSEJO', 'https://drive.google.com/file/d/1xFMTcsk5_8uIoadDHfjA9aGjCb01R_Wo/view?usp=drive_link', 'TW21', 'Tech');
+    newPoster('E-Jeep Share', 'Jumwows', 'https://drive.google.com/file/d/1OATkloDjObYvxDJutivoflPB_j5zXPVo/view?usp=drive_link', 'TW21', 'Tech');
+    newPoster('THOMAS & CO', 'Thomas and Friends', 'https://drive.google.com/file/d/1ToipECIsitpj_jxUJ8a_TnoK1K61gsyL/view?usp=drive_link', 'TW21', 'Tech');
+    newPoster('PIPOPIP', 'Pipopip', 'https://drive.google.com/file/d/1HOD_NKcuYzMbWviOLfQJdaBMwj_XazLP/view?usp=drive_link', 'TW21', 'Tech');
+    newPoster('MARKA', 'Lakas ng LIMA', 'https://drive.google.com/file/d/1zHMkHmegV32iwztxKyxvp2aK7a9_-40F/view?usp=sharing', 'TW21', 'Tech');
+    newPoster('FINDIE', 'Oompa Loompa', 'https://drive.google.com/file/d/1d1VvvGDjebX26AENRjbegeehu1s4uhXI/view?usp=drive_link', 'TW21', 'Tech');
+
+    newPoster('Finax', 'Chowlong', 'https://drive.google.com/file/d/1iEN3xv9tfNsUJsarxBtNTFOyRbyWhnjm/view?usp=sharing', 'TW22', 'Tech');
+    newPoster('Filmd PH', 'Nanshalan', 'https://drive.google.com/file/d/13Z6QmTkNEPOZcl9P2a5dzxjAbaPSxHxq/view?usp=sharing', 'TW22', 'Tech');
+    newPoster('TamTreats', 'Winx Club', 'https://drive.google.com/file/d/1L36j8wb3cOxa-iJAcLIVeyFiG_dL_mBo/view?usp=drive_link', 'TW22', 'Tech');
+    newPoster('PowrHaus', 'Incendiary', 'https://drive.google.com/file/d/1GD-xumD3_LemCP0XzMYJOkfGYJLXwfmF/view?usp=drive_link', 'TW22', 'Tech');
+    newPoster('EmpowerGrid', 'Heti', 'https://drive.google.com/file/d/1kyukSKCAP93D0jC1_Uo8uzgsvRQf24Wl/view?usp=drive_link', 'TW22', 'Tech');
+    newPoster('Empower Tech', 'Caerus', 'https://drive.google.com/file/d/1KtWp3d1731o9KASc4R2SWtyjOEtgkPYG/view?usp=drive_link', 'TW22', 'Tech');
+    newPoster('Metrocycle', 'Innov Gang', 'https://drive.google.com/file/d/1C5dnfuL3hQhtW7Bl2HsSFBLiBMphedUf/view?usp=drive_link', 'TW22', 'Tech');
+
+    newPoster('PitStop', 'GAR', 'https://drive.google.com/file/d/13RJAIh-f-4t3q-HrwJehZC7HPN85cx4w/view?usp=drive_link', 'TW23', 'Tech');
+    newPoster('StarUp Hub', 'DIOR', 'https://drive.google.com/file/d/1ebn5gRxyerNvLrHIj_7S1Vx0MpexFdx7/view?usp=drive_link', 'TW23', 'Tech');
+    newPoster('Assist Me', 'CTRL ALT ELITE', 'https://drive.google.com/file/d/1w9U-x9mRW4tWyu_0kO2KoYdI87EQqKWx/view?usp=drive_link', 'TW23', 'Tech');
+    newPoster('ALHU', 'NIGHTKIDS', 'https://drive.google.com/drive/folders/1Kjkr1kfxs9ZbQF4Rdh8ajQb3GZRaNEx3?fbclid=IwZXh0bgNhZW0CMTAAAR09r8-6s0IqblcxfyzIMiAL5vImDdBwbdv4XnRcMavee-RfkSzUGjqkzfQ_aem_xRGHRpPPMYOluL950KyJUQ', 'TW23', 'Tech');
+    newPoster('CoachConnectPH', 'YOUNGPRENEURS', 'https://drive.google.com/file/d/1Aj6Dru3n4hgI0HnKPGJlcP2HiT9Tl-Q0/view?usp=sharing', 'TW23', 'Tech');
+
+    newPoster('Smart Start Tutoring', 'TechKids', 'https://drive.google.com/file/d/1YN7uUdiQ5HxufaLgAu_iXgmYmj5GTC5N/view?usp=drive_link', 'TW24', 'Tech');
+    newPoster('Money Maven', 'MALABLAB KITA', 'https://drive.google.com/file/d/1eOn4y87g2TpxLmUlkulrlgHTqCvkVZFL/view?usp=drive_link', 'TW24', 'Tech');
+    newPoster('MedReserve', 'FORKNIK', 'https://drive.google.com/file/d/1AsJwCkEmz67X9OAuvSGfhKX4Ihpe8f7Y/view?usp=drive_link', 'TW24', 'Tech');
+    newPoster('Eco-Cool', 'TROY KINGDOM', 'https://drive.google.com/file/d/1FXV_uN_b3MwUFov3m5QqPa4fouRFY8Fv/view?usp=sharing', 'TW24', 'Tech');
+    newPoster('FarmFresh Connection', 'BUKES', 'https://drive.google.com/file/d/1b9KCKdbjF1JeZRatciPG1Qm4HWyjNtDy/view?usp=drive_link', 'TW24', 'Tech');
+    newPoster('EcoEarn', 'INNOVATECH', 'https://drive.google.com/file/d/1V86-FFnETReuHUHHISTzFLpdKQwHCU-p/view?usp=drive_link', 'TW24', 'Tech');
+    newPoster('SafeStride', 'GENZ', 'https://drive.google.com/file/d/1V36j4UTkFA4R0ZMFtt5ylhBxb4vtzvn0/view?usp=drive_link', 'TW24', 'Tech');
+    newPoster('TrabaWHO', 'TECHNORIZZLERS', 'https://drive.google.com/file/d/10mi6b0cuWCNwUboxsPSidkzBjYxyV4Qg/view?usp=drive_link', 'TW24', 'Tech');
+    newPoster('Mirari', 'BIG BOYZ', 'https://drive.google.com/file/d/1lq2fk6BrDAx9GLdQBOU8nphslAdWMfl5/view?usp=drive_link', 'TW24', 'Tech');
+
+    newPoster('Grocery on the Go', 'RVN', 'https://drive.google.com/file/d/1Gd2y21noxVFF6YNJbD0cLcM__qvZMmFt/view?usp=drive_link', 'TX21', 'Tech');
+    newPoster('DormDish', 'TechnoVision', 'https://drive.google.com/file/d/1AMMlvu-WDItNzlzPr0z5A5Z5NL1to1_H/view?usp=drive_link', 'TX21', 'Tech');
+    newPoster('HealthStock', 'HYTECH', 'https://drive.google.com/file/d/1t1COgMYmMhMSHAnjgy-58XYvsIDXYpbq/view?usp=drive_link', 'TX21', 'Tech');
+    newPoster('SupplyDrop', 'TechnoRunners', 'https://drive.google.com/file/d/1pQvMCVMeEn3OO_yyZV2WPC0kfC3ujjgd/view?usp=drive_link', 'TX21', 'Tech');
+    newPoster('GreenBasket', 'Orange Incorporated', 'https://drive.google.com/file/d/1Jivcft7_yXVOyEhcpKTvZYwDTvDpEZwm/view?usp=sharing', 'TX21', 'Tech');
+    newPoster('Oyakodon Express', 'Oyakodon', 'https://drive.google.com/file/d/1K9yxlPgjusQ0lEsLQ5N2kEqWL8s2WmYb/view?usp=drive_link', 'TX21', 'Tech');
+    newPoster('Breezy Buddy', 'BGN', 'https://drive.google.com/file/d/1NOdXvWBebIiBjj4VCmzcCQUADQB365RU/view?usp=sharing', 'TX21', 'Tech');
+    newPoster('MediLine', 'TechMate', 'https://drive.google.com/file/d/18RdZLoaEzJQ7FuqLT6MAV637-xkmeR3J/view?usp=sharing', 'TX21', 'Tech');
+    newPoster('Little Sedna', 'Sednacity', 'https://drive.google.com/file/d/1zN-NIUNsAKmNqGqxPmuDi63mzbnCb_sR/view?usp=drive_link', 'TX21', 'Tech');
+
+    newPoster('GoGaia', 'Imi-Centam', 'https://drive.google.com/file/d/1d6RFl6SBAVpBrgRYUFO_Kt176l8YLeNp/view?usp=sharing', 'TX22', 'Tech');
+    newPoster('Commuty', 'Tiny Centams', 'https://drive.google.com/file/d/1BwHbSAfp2qPP5hr6JM4BURhQScXyrBIB/view?usp=sharing', 'TX22', 'Tech');
+    newPoster('MediSphere', 'Jed\'s Tech Incorporated', 'https://drive.google.com/file/d/1YlZ_yVPIY-eS8shF36mI8WMHUTbzMw1u/view?usp=drive_link', 'TX22', 'Tech');
+    newPoster('EcoCreds', 'Tobias Innovations', 'https://drive.google.com/file/d/1VsGTj97qZAIjSbiGhjADIx9XHTmtBAEM/view?usp=sharing', 'TX22', 'Tech');
+    newPoster('GoOverflow', 'Takipsilim', 'https://drive.google.com/file/d/1Qx5wxGbNSDolcG2HComFwbmHZhkYwFjp/view?fbclid=IwZXh0bgNhZW0CMTEAAR0QqcAjTDdMoGEFLjoI2y4Bt1A5Exv6yZ71rLWHi-LTJDCFhkjvYuY0wD8_aem_2WA4KouDdFTEhgxA-4lEbA', 'TX22', 'Tech');
+    newPoster('Study Buddy', 'Tech Buddies', 'https://drive.google.com/file/d/1drk1BfdZJlICXOII4yEgjkLarq1jPcOP/view?usp=drive_link', 'TX22', 'Tech');
+    
+    newPoster('???', 'TECHNOvengers', '', 'TX23', 'Tech');
+    
+    applyFinalists();
+  </script>
+</html>

@@ -1,0 +1,84 @@
+#airbus .overlay {
+    top: 0px;
+    left: 55%;
+}
+
+#apartment .overlay {
+    top: -20px;
+}
+
+#balloon .overlay {
+    top: -60px;
+    left: 46px;
+}
+
+#bank .overlay {
+    top: -30px;
+}
+
+#blue-bldg .overlay {
+    top: -25%;
+}
+
+#cafe .overlay {
+    top: -40px;
+}
+
+#feu-alabang .overlay {
+    top: -30px;
+    left: 100px;
+}
+
+#feu-diliman .overlay {
+    top: -10px;
+    left: 90px;
+}
+
+#feu-tech .overlay {
+    top: -60px;
+}
+
+#helicopter .overlay {
+    top: -40px;
+    left: 62px;
+}
+
+#hospital .overlay {
+    top: -20px;
+}
+
+#lb-bldg .overlay {
+    top: -10px;
+    left: 90px;
+}
+
+#pharmacy .overlay {
+    top: -35px;
+}
+
+#tallest .overlay {
+    top: -56px;
+    left: 50px;
+}
+
+#triplets .overlay {
+    top: -20px;
+    left: 70px;
+}
+
+#yacht .overlay {
+    top: -50px;
+    left: 65px;
+}
+
+#whale .overlay {
+    top: -70px;
+}
+
+#windmill .overlay {
+    top: -70px;
+}
+
+#feu-diliman .sprite {
+    filter: hue-rotate(60deg) brightness(95%);
+}

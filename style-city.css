@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap");
+
+
+@keyframes pinFloatAnimation {
+    0% {
+        transform: translate(-50%,0%);
+    } 100% {
+        transform: translate(-50%, -20%);
+    }
+}
+
+:root {
+    --green: #5a791a;
+}
+
+body {
+    background-color: #58ab99;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#city-map {
+    background: url(img/city-map.jpg);
+    width: 1280px;
+    height: 1024px;
+    position: relative;
+    display: none;
+}
+
+#city-map > div {
+    position: absolute;
+}
+
+#city-map > div:hover:not(.mute) {
+    transform: scale(105%);
+    z-index: 1000;
+}
+
+#city-map > div * {
+    cursor: pointer;
+}
+
+#city-map img {
+    width: 100%;
+}
+
+#city-map .overlay {
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%, 0%);
+    transition-duration: 0.3s;
+}
+
+#city-map .pin {
+    opacity: 100;
+    width: 50px;
+    height: 69.3px;
+    background-size: contain;
+    animation-name: pinFloatAnimation;
+    animation-direction: alternate-reverse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#city-map > div:hover .pin {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+#city-map .txt {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbdb37;
+    border: 5px solid var(--green);
+    border-radius: 15px;
+    color: var(--green);
+    font-family: "Bebas Neue", cursive;
+    font-weight: 800;
+    text-align: center;
+    line-height: 0.85;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding: 7px 5px 5px;
+    width: 0;
+    height: 55px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transform: translate(-50%, 10%);
+}
+
+#city-map > div:hover .txt {
+    opacity: 100;
+    width: 264px;
+}
+
+#video-banner {
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    z-index: 200;
+}
+
+#video-banner img {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#close-video-banner {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 7px;
+}
+
+#close-video-banner:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+}
+
+#close-video-banner > button {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 200px 200px;
+    animation-name: radar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-height: 1024px) {
+    body {
+        height: 100vh;
+    }
+}
